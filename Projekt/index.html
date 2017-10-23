@@ -19,23 +19,37 @@
         <header>
             <h1> MY TODO LIST</h1>
         </header>
+        <nav>
+            <section class="Date">
+                <h2> DATA:</h2>
+                <p>23.10.2017</p>
+            </section>
+            <section class="NewTODO">
+                <h4>Masz jakieś zadanie do zrobienia? dodaj je!</h4>
+                <input type="text" placeholder="Nowe Zadanie">
+                <input type="submit" onclick="Add()" value="+">
+            </section>
+        </nav>
         <main>
-            <nav>
-                <section class="Date">
-                    <h2> DATA:</h2>
-                    <p>23.10.2017</p>
-                </section>
-                <section class="NewTODO">
-                    <h4>Masz jakieś zadanie do zrobienia? dodaj je!</h4>
-                    <input type="text" placeholder="Nowe Zadanie"><input type=submit value="dodaj">
-                </section>
-            </nav>
+
             <section class="TODO">
                 <h2>TODO:</h2>
                 <ul class="TODOLIST">
-                    <li class="Desc"><span class="SelectAll floatLeft"><input type="checkbox"></span>Zadanie<span class="close floatRight ">usun</span></li>
-                    <li><span class="Select floatLeft"><input type="checkbox"></span>Hello World<span class="close floatRight text-red">X</span></li>
-                    <li><span class="Select floatLeft"><input type="checkbox"></span>Hello World<span class="close floatRight text-red">X</span></li>
+                    <li class="Desc">
+                        <input type="checkbox" class="SelectAll Left">
+                        <label class="desc_label">Zadania:</label>
+                        <button class="Right" onclick="DeleteAll()">All</button>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="Select Left">
+                        <label>Hello World</label>
+                        <button class="Right" onclick="Delete()">X</button>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="Select Left">
+                        <label>Hello World</label>
+                        <button class="Right" onclick="Delete()">X</button>
+                    </li>
                 </ul>
 
             </section>
