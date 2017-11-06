@@ -10,45 +10,38 @@
 
     <title>Zadanie zajecia 1</title>
     <style>
-        .loader,
-        .loader2,
-        .loader3 {
-            border-radius: 50%;
-        }
-
         .load {
             position: relative;
 
             background-color: black;
         }
-
-        .loader {
-            margin: 5%;
+        .load .loader,
+        .load .loader2,
+        .load .loader3 {
+            border-radius: 50%;
+        }
+        .load .loader {
             position: absolute;
-            border-top: 3px solid red;
+            margin: 5%;
             width: 90%;
             height: 90%;
+            border-top: 3px solid red;
             animation: spin 3s linear infinite;
         }
 
-        .loader2 {
-            position: absolute;
-            top: 50%;
+        .load .loader2 {
+            margin: 20%;
+            width: 60%;
+            height: 60%;
             border-top: 3px solid yellow;
-            top: 15%;
-            left: 15%;
-            width: 66%;
-            height: 66%;
             animation: spin 2s linear infinite;
         }
 
-        .loader3 {
-            position: absolute;
-            border-top: 3px solid red;
-            top: 30%;
-            left: 30%;
-            width: 33%;
-            height: 33%;
+        .load .loader3 {
+            margin: 20%;
+            width: 60%;
+            height: 60%;
+            border-top: 3px solid red;         
             animation: spin 1s linear infinite;
         }
 
@@ -68,13 +61,18 @@
     loader1:
     <div class="load" style="width:400px;height:400px">
         <div class="loader">
+                <div class="loader2">
+                        <div class="loader3">
+                                
+                                        </div>
+                                </div>
+                               
         </div>
-        <div class="loader2">
+        
+    </div>
+    Loader2:
+    <div class="load2">
 
-        </div>
-        <div class="loader3">
-
-        </div>
     </div>
 </body>
 
