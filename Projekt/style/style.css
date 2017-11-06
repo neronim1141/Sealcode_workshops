@@ -13,24 +13,23 @@ body {
     width: 100%;
     min-height: 100%;
     color: white;
-    display: grid;
-    grid-template-rows: 100px 100px auto 1fr auto;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    grid-row: 1;
+    flex:1;
     text-align: center;
 }
 
 main {
-    grid-row: 3;
+    flex:1;
     margin-bottom: 50px;
 }
 
 nav {
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    flex:1;
+    display: flex;
     background-color: #7986CB;
     box-shadow: 0 8px 6px -7px black;
 }
@@ -38,13 +37,13 @@ nav {
 .Date {
     text-align: center;
     padding: 0 20px;
-    grid-column: 1;
+    flex:0.25;
 }
 
 .NewTODO {
     text-align: center;
     padding: 0 20px;
-    grid-column: 2;
+    flex:0.75;
 }
 
 .NewTODO input[type="text"] {
@@ -86,14 +85,12 @@ nav {
 .TODO .TODOLIST li {
     padding: 10px;
     margin: 5px;
-    display: grid;
-    grid-template-columns: 20px 1fr 50px;
+    display: flex;
 }
 
 .TODO .TODOLIST li input[type="checkbox"] {
-    grid-column: 1;
-    width: 100%;
-    height: 100%;
+    flex:0.10;
+    height:20px;
 }
 
 .TODO .TODOLIST li input[type="checkbox"]:checked+label:not(.desc_label) {
@@ -102,7 +99,7 @@ nav {
 }
 
 .TODO .TODOLIST li label {
-    grid-column: 2;
+    flex:0.8;
     font-size: 1.2em;
 }
 
@@ -119,7 +116,7 @@ nav {
 }
 
 .TODO .TODOLIST li button {
-    grid-column: 3;
+    flex:0.03;
     margin-top: -5px;
     background: #3F51B5;
     color: white;

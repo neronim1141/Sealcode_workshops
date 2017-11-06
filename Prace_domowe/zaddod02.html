@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Zadanie zajecia 1</title>
+    <style>
+        .loader,
+        .loader2,
+        .loader3 {
+            border-radius: 50%;
+        }
+
+        .load {
+            position: relative;
+
+            background-color: black;
+        }
+
+        .loader {
+            margin: 5%;
+            position: absolute;
+            border-top: 3px solid red;
+            width: 90%;
+            height: 90%;
+            animation: spin 3s linear infinite;
+        }
+
+        .loader2 {
+            position: absolute;
+            top: 50%;
+            border-top: 3px solid yellow;
+            top: 15%;
+            left: 15%;
+            width: 66%;
+            height: 66%;
+            animation: spin 2s linear infinite;
+        }
+
+        .loader3 {
+            position: absolute;
+            border-top: 3px solid red;
+            top: 30%;
+            left: 30%;
+            width: 33%;
+            height: 33%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    loader1:
+    <div class="load" style="width:400px;height:400px">
+        <div class="loader">
+        </div>
+        <div class="loader2">
+
+        </div>
+        <div class="loader3">
+
+        </div>
+    </div>
+</body>
+
+</html>
