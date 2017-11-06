@@ -12,7 +12,6 @@
     <style>
         .load {
             position: relative;
-
             background-color: black;
         }
         .load .loader,
@@ -44,6 +43,26 @@
             border-top: 3px solid red;         
             animation: spin 1s linear infinite;
         }
+        .load2{
+            position: relative;
+        }
+
+        .load2 .loader,
+        .load2 .loader2,
+        .load2 .loader3 {
+            border-radius: 50%;
+        }
+
+        .load2 .loader,.loader2, .loader3, .loader4, .loader5, .loader6,.loader7,.loader8 {
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border:25px solid black;   
+            border-top: 25px solid grey;
+            animation: spin 5s linear infinite;
+            
+        }
 
         @keyframes spin {
             0% {
@@ -71,7 +90,25 @@
         
     </div>
     Loader2:
-    <div class="load2">
+    <div class="load2" style="width:400px;height:400px">
+        <div class="loader">
+            <div class="loader2">
+                    <div class="loader3">
+                            <div class="loader4">
+                                <div class="loader5">
+                                    <div class="loader6">
+                                        <div class="loader7">
+                                                <div class="loader8">
+                                                        
+                                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                
+            </div>
+        </div>
 
     </div>
 </body>
