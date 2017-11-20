@@ -5,69 +5,78 @@
     </head>
     <style>
         .box{
-            width:960px;
+            width:900px;
             margin:auto;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow:row wrap;
+            
         }
-        .A,.B,.C,.D,.E,.F,.G,.H,.I,.J,.K{
-            flex:1;
-            padding: 2em;
-            text-align: center;
-            min-width:20%;
-
-        }
+      
         .A{
+            flex:1;
             order: 3;
-            
-            
             background-color: red;
         }
         .B{
+            flex:0.5;
             order: 5;
             background-color: blue;
             
         }
         .C{
+            flex:1;
             order: 2;
-       
             background-color: green;
         }
         .D{
+            flex:1;
             order: 11;
             background-color:yellow;
         }
         .E{
+            flex:0.4;
             order: 4;
             background-color: orange;
         }
         .F{
+            flex:1;
             order: 7;
             background-color: purple;
             
         }
         .G{
+            flex:1;
             order: 9;
             background-color: lime;
         }
         .H{
+            flex:1;
             order: 6;
-            background-color: rgb(253, 1, 199);
+            background-color: magenta;
             
         }
         .I{
+            flex:1;
             order: 8;
             background-color: brown;
         }
         .J{
+            flex:1;
             order: 1;
             background-color: grey;
             
         }
         .K{
+            flex:1;
             order: 10;
             background-color: pink;
+        }
+        .A,.B,.C,.D,.E,.F,.G,.H,.I,.J,.K{ 
+            flex-basis: 30%;
+            text-align: center;
+            box-sizing: border-box;
+            padding:20px;
+
         }
     
     
