@@ -8,14 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="style/style.css">
+    <!-- <link rel="stylesheet" href="//basehold.it/24"> -->
 
     <title>New HMTL document by NewJect</title>
 
 </head>
 
 <body>
-
-    <div class="wrapper">
         <header>
             <h1> MY TODO LIST</h1>
         </header>
@@ -27,40 +26,69 @@
             <section class="NewTODO">
                 <h4>Masz jakieś zadanie do zrobienia? dodaj je!</h4>
                 <input type="text" placeholder="Nowe Zadanie">
-                <input type="submit" onclick="Add()" value="+">
+                <button onclick="Add()" >+</button>
             </section>
         </nav>
-        <main>
-
-            <section class="TODO">
-                <h2>TODO:</h2>
-                <ul class="TODOLIST">
-                    <li class="Desc">
+        <main class="TODOLIST">
+                    <div class="TODOLIST__header">
                         <input type="checkbox" class="SelectAll Left">
                         <label class="desc_label">Zadania:</label>
-                        <button class="Right" onclick="DeleteAll()">All</button>
-                    </li>
-                    <li>
-                        <input type="checkbox" class="Select Left">
+                        <button onclick="DeleteAll()">Wszystkie</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox" >
                         <label>Hello World</label>
                         <button class="Right" onclick="Delete()">X</button>
-                    </li>
-                    <li>
-                        <input type="checkbox" class="Select Left">
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox" >
                         <label>Hello World</label>
                         <button class="Right" onclick="Delete()">X</button>
-                    </li>
-                </ul>
-
-            </section>
-
-
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
+                    <div class="TODOLIST__item">
+                        <input type="checkbox">
+                        <label>Hello World</label>
+                        <button onclick="Delete()">X</button>
+                    </div>
         </main>
         <footer>
             Aplikacje Wykonał Kacper Kruczek w ramach projektu Sealcode Workshops
         </footer>
-
-    </div>
 </body>
 
 </html>
