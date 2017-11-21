@@ -58,6 +58,7 @@ main>h2 {
     text-align: center;
 }
 .TODOLIST {
+    background-image: url(//basehold.it/i/24);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -65,7 +66,6 @@ main>h2 {
 }
 .TODOLIST>* {
     display: flex;
-    background: white;
     box-sizing: border-box;
 }
 .TODOLIST__header {
@@ -76,11 +76,9 @@ main>h2 {
     color: white;
 }
 .TODOLIST__item {
-    margin: 0.25rem 0;
-    font-size: 1.5rem;
-    width: 90%;
+    font-size: 1rem;
+    width: 100%;
     transition: 0.2s;
-    background-color: #E3F2FD;
 }
 .TODOLIST__item:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
