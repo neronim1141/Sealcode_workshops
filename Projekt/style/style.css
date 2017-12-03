@@ -1,9 +1,10 @@
 html {
     height: 100%;
 }
+
 body {
     background: #E3F2FD;
-    margin: 0;
+    margin:0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -11,45 +12,69 @@ body {
     height: 100%;
     font-size: 1rem;
 }
+header{
+    font-size:0.9rem;
+}
+
 button {
-    border-radius: 15px;
+
     background-color: #0D47A1;
     border: none;
     color: white;
 }
 nav {
-    margin-top: 1rem;
+    width: 100%;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    width: 960px;
+    max-width: 960px;
     display: flex;
     justify-content: space-between;
     background: #2196F3;
 }
 nav>.Date {
+    margin-top: 0.2rem;
     width: 200px;
     text-align: center;
 }
+nav >.Date> p{
+    font-size: 1.4rem;
+}
 nav>.NewTODO {
-    text-align: right;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     padding: 0 10px;
 }
 nav>.NewTODO>input {
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 15px;
+    flex:1 0 calc(90% - 0.2rem);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     border: none;
-    width: 300px;
+    padding-left:0.2rem;
+    max-width: 600px;
+    margin-top:-0.8rem;
+    height:1.3rem;
+    
 }
 nav>.NewTODO>button {
     font-size: calc( 5/4 * 1rem);
+
     background-color: #388E3C;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    flex:1 0 10%;
+    margin-top:-0.8rem;
+    height:1.44rem;
+    max-width: 2rem;
 }
 nav>.NewTODO>button:hover {
     background-color: #4CAF50;
 }
 main {
-    margin: 1rem 0;
+    max-width: 720px;
+    margin: 1.4rem 0;
     background-color: #fafafa;
     flex: 1 0 auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -58,25 +83,26 @@ main>h2 {
     text-align: center;
 }
 .TODOLIST {
-    background-image: url(//basehold.it/i/24);
+    width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 600px;
+
+
 }
 .TODOLIST>* {
     display: flex;
     box-sizing: border-box;
 }
 .TODOLIST__header {
-    padding: 0.45rem 0;
+    padding: 1.1rem 0;
     font-size: 2rem;
     width: 100%;
     background: #1976D2;
     color: white;
 }
 .TODOLIST__item {
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 100%;
     transition: 0.2s;
 }
@@ -84,10 +110,11 @@ main>h2 {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .TODOLIST>*>input {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     width: 20px;
 }
 .TODOLIST__header >input{
+   
     margin-top: 0.8rem;
 }
 .TODOLIST>*>label {
@@ -96,8 +123,8 @@ main>h2 {
 }
 .TODOLIST>*>button {
     transition: 0.1s;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     min-width: 40px;
 }
 .TODOLIST>*>button:hover {
@@ -110,7 +137,7 @@ footer {
 }
 footer {
     color: white;
-    padding: 1rem 0;
+    padding: 1.3rem 0;
     background-color: #0D47A1;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
